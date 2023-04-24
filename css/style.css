@@ -1,0 +1,153 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/earlyaccess/notosansjapanese.css");
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1160px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header>.container {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  max-width: none;
+  padding: 0 60px;
+}
+
+.area_logo_header .logo {
+  display: block;
+}
+
+.area_logo_header img {
+  height: 60px;
+  vertical-align: bottom;
+}
+
+.nav_header {
+  margin-left: auto;
+}
+
+.list_nav_header {
+  display: flex;
+  align-items: center;
+  margin: 0 -15px;
+}
+
+.list_nav_header>li {
+  padding: 0 15px;
+}
+
+.list_nav_header a {
+  color: #fff;
+  font: 400 18px/1em 'futura PT', 'noto sans japanese', sans-serif;
+}
+
+[class*="btn_ico"] {
+  font: 400 18px/1em 'futura PT', 'noto sans japanese', sans-serif;
+  display: flex;
+  align-items: center;
+  height: 36px;
+  padding: 0 30px 0 60px;
+  background: #0cf;
+  position: relative;
+}
+
+[class*="btn_ico"]:before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+
+
+[class*="btn_ico"][class*="mail"]:before {
+  background: url(../img/ico/ico_mail.svg);
+}
+
+.area_top_view {
+  height: 700px;
+  background: url(../img/bg/bg_view.jpg);
+}
+
+.area_top_view>.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+
+.area_top_view .img {
+  height: 60px;
+  vertical-align: bottom;
+}
+
+.area_top_view .ttl {
+  color: #fff;
+  font: 400 27px/1em 'futura PT', 'noto sans japanese', sans-serif;
+  letter-spacing: .04em;
+  margin: 20px 0 0;
+  padding: 0 0 0 40px;
+  position: relative;
+}
+
+.area_top_view .ttl::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../img/ico/ico_sns_youtube.svg) no-repeat center center;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+[class*="area_home"] {
+  padding: 80px 0;
+}
+
+.head_home {
+  margin: 0 0 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.head_home .ttl {
+  font: 500 56px/1em 'futura PT', 'noto sans japanese', sans-serif;
+  padding: 0 0 12px;
+  position: relative;
+}
+
+.head_home .ttl:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background: #0cf;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
