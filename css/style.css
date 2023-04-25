@@ -56,12 +56,14 @@ header>.container {
 }
 
 [class*="btn_ico"] {
+  color: #fff;
   font: 400 18px/1em 'futura PT', 'noto sans japanese', sans-serif;
   display: flex;
   align-items: center;
   height: 36px;
   padding: 0 30px 0 60px;
   background: #0cf;
+  box-shadow: 0 7px 6px -4px rgba(16, 61, 72, .2);
   position: relative;
 }
 
@@ -72,7 +74,7 @@ header>.container {
   height: 30px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center center;
   position: absolute;
   top: 50%;
   left: 15px;
@@ -84,21 +86,25 @@ header>.container {
   background: url(../img/ico/ico_mail.svg);
 }
 
+[class*="btn_ico"][class*="youtube"]:before {
+  background: url(../img/ico/ico_sns_youtube.svg);
+}
+
 .area_top_view {
-  height: 700px;
-  background: url(../img/bg/bg_view.jpg);
+  background: url(../img/bg/bg_view.jpg) no-repeat bottom center;
+  background-size: cover;
 }
 
 .area_top_view>.container {
+  height: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
 }
 
 
-.area_top_view .img {
+.area_top_view img {
   height: 60px;
   vertical-align: bottom;
 }
@@ -112,7 +118,7 @@ header>.container {
   position: relative;
 }
 
-.area_top_view .ttl::before {
+.area_top_view .ttl:before {
   content: "";
   display: block;
   width: 30px;
@@ -126,7 +132,7 @@ header>.container {
 }
 
 [class*="area_home"] {
-  padding: 80px 0;
+  padding: 80px 0 120px;
 }
 
 .head_home {
@@ -150,4 +156,154 @@ header>.container {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.layout_2_div {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 -40px;
+  align-items: center;
+}
+
+.layout_2_div>div {
+  width: 50%;
+  padding: 0 40px;
+}
+
+.text_home .ttl {
+  font: 500 32px/1em 'futura PT', 'noto sans japanese', sans-serif;
+  margin: 0 0 20px;
+}
+
+.text_home .description {
+  font: 300 20px/1.8em 'futura PT', 'noto sans japanese', sans-serif;
+  margin: 30px 0 0;
+}
+
+.text_home .btnarea {
+  margin: 30px 0 0;
+  display: flex;
+  align-items: center;
+}
+
+.bg_black {
+  color: #fff;
+  background: #000;
+}
+
+.area_home_about img {
+  transform: sacle(1.2);
+  transform-origin: center center;
+}
+
+.list_feature {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+
+.list_feature>li {
+  width: 33.3333%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list_feature .img {
+  margin: 0 0 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.list_feature .img:before {
+  content: "";
+  display: block;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background: blue;
+  box-shadow: 0px 2px 12px 2px rgba(0, 204, 255, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+}
+
+.list_feature img {
+  width: 80px;
+  height: 80px;
+  vertical-align: bottom;
+}
+
+.list_feature .ttl {
+  font: 600 28px/1em 'futura PT', 'noto sans japanese', sans-serif;
+  margin: 0 0 30px;
+}
+
+.list_feature .description {
+  font: 300 18px/2em 'futura PT', 'noto sans japanese', sans-serif;
+}
+
+.area_home_profile img {
+  box-shadow: 0 16px 6px -8px rgba(16, 61, 72, .2);
+}
+
+footer>.container {
+  padding: 0 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list_sns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -10px;
+}
+
+.list_sns>li {
+  padding: 0 10px;
+}
+
+.list_sns a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #000;
+  border-radius: 50%;
+  position: relative;
+}
+
+.list_sns a::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.list_sns .youtube a:before {
+  background: url(../img/ico/ico_sns_youtube.svg);
+}
+
+.list_sns .instagram a:before {
+  background: url(../img/ico/ico_sns_instagram.svg);
+}
+
+.list_sns .facebook a:before {
+  background: url(../img/ico/ico_sns_facebook.svg);
+}
+
+.copyright {
+  font: 300 14px/1em 'futura PT', 'noto sans japanese', sans-serif;
+  margin: 30px 0 0;
 }
